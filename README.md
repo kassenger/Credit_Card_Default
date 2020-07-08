@@ -5,6 +5,5 @@ If you didn’t pay your bills by due date, the credit card will be defaulted. W
 Since there is a higher cost associated with False Negative(customers who default are identified as reliable)
 we choose Fbeta score as our metric where beta = 2 to weigh more on recall. 
 
-Among 6 models(XGBoost, Gaussian Naive Bayes, Logistic, RF, LinearSVC and KNN), Considering if I add more data, logistic will perform better since it is scalable and optimizable. In addition, it is more interpretable. We can always adjust threshold based on different credit card company's lending standards. If it has tighter charge off rate we can increase the threshold to decrease False Negative and vice versa. 
-
+Among 6 models(XGBoost, Gaussian Naive Bayes, Logistic, RF, LinearSVC and KNN), Gaussian Naive Bayes & Logistic have the highest Fbeta Score. Suppose I add more data, logistic will perform better since it is scalable and optimizable. In addition, it is more interpretable. So we choose logistic regression as our final model.For the corresponding confusion matrix, we can always adjust threshold based on different credit card company's lending standards. 
 
